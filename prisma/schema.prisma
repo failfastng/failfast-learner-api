@@ -1,0 +1,58 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Session {
+  id                        Int               @id @default(autoincrement())
+  session_uuid              String            @unique
+  display_name_hash         String
+  subject                   String
+  started_at                DateTime
+  last_activity_at          DateTime
+  ended_at                  DateTime
+  ended_early               Boolean           @default(false)
+  questions_answered        Int
+  questions_abandoned       Int
+  total_points              Int
+  success_points            Int
+  grit_points               Int
+  completed_waitlist_signup Boolean           @default(false)
+  clicked_share             Boolean           @default(false)
+  outcomes                  QuestionOutcome[]
+
+  @@index([subject])
+  @@index([ended_at])
+}
+
+model QuestionOutcome {
+  id                    Int      @id @default(autoincrement())
+  session_uuid          String
+  session               Session  @relation(fields: [session_uuid], references: [session_uuid])
+  question_id           String
+  outcome               String
+  success_points_earned Int
+  grit_points_earned    Int
+  resolved_at           DateTime
+
+  @@index([session_uuid])
+  @@index([question_id])
+  @@index([outcome])
+}
+
+model WaitlistSignup {
+  id         Int      @id @default(autoincrement())
+  email      String   @unique
+  source     String
+  created_at DateTime @default(now())
+}
+
+model ResetEvent {
+  id           Int      @id @default(autoincrement())
+  session_uuid String
+  created_at   DateTime @default(now())
+}
