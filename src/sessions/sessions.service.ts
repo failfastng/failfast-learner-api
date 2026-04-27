@@ -31,7 +31,7 @@ export class SessionsService {
         });
         if (dto.outcomes.length > 0) {
           await tx.questionOutcome.createMany({
-            data: dto.outcomes.map(o => ({
+            data: dto.outcomes.map((o) => ({
               session_uuid: dto.session_uuid,
               question_id: o.question_id,
               outcome: o.outcome,

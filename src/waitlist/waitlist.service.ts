@@ -12,8 +12,8 @@ export class WaitlistService {
       await this.prisma.waitlistSignup.create({
         data: { email, source: dto.source },
       });
-    } catch (err: any) {
-      if (err?.code === 'P2002') return; // duplicate — silent swallow
+    } catch (err: unknown) {
+      if ((err as { code?: string })?.code === 'P2002') return; // duplicate — silent swallow
       throw err;
     }
   }

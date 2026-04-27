@@ -1,4 +1,14 @@
-import { IsBoolean, IsDateString, IsIn, IsInt, IsString, IsUUID, Min, ValidateNested, IsArray } from 'class-validator';
+import {
+  IsBoolean,
+  IsDateString,
+  IsIn,
+  IsInt,
+  IsString,
+  IsUUID,
+  Min,
+  ValidateNested,
+  IsArray,
+} from 'class-validator';
 import { Type } from 'class-transformer';
 import { QuestionOutcomeDto } from './question-outcome.dto';
 

@@ -12,7 +12,11 @@ describe('Waitlist (e2e)', () => {
     }).compile();
     app = moduleFixture.createNestApplication();
     app.useGlobalPipes(
-      new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true, transform: true }),
+      new ValidationPipe({
+        whitelist: true,
+        forbidNonWhitelisted: true,
+        transform: true,
+      }),
     );
     await app.init();
   });
@@ -43,7 +47,11 @@ describe('Waitlist (e2e)', () => {
   it('POST /waitlist — honeypot filled returns 200 with no error', async () => {
     return request(app.getHttpServer())
       .post('/waitlist')
-      .send({ email: `bot-${Date.now()}@example.com`, source: 'summary_screen', hp: 'i-am-a-bot' })
+      .send({
+        email: `bot-${Date.now()}@example.com`,
+        source: 'summary_screen',
+        hp: 'i-am-a-bot',
+      })
       .expect(200);
   });
 });

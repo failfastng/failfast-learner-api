@@ -27,12 +27,19 @@ export class QuestionsService implements OnModuleInit {
       const dto = plainToInstance(QuestionDto, entry);
       const errors = validateSync(dto);
       if (errors.length > 0) {
-        const id = (entry as Record<string, unknown>)?.id ?? '<unknown>';
+        const idRaw = (entry as Record<string, unknown>)?.id;
+        const id =
+          typeof idRaw === 'string' || typeof idRaw === 'number'
+            ? String(idRaw)
+            : '<unknown>';
         const fields = errors
-          .map((e) => `${e.property}: ${Object.values(e.constraints ?? {}).join(', ')}`)
+          .map(
+            (e) =>
+              `${e.property}: ${Object.values(e.constraints ?? {}).join(', ')}`,
+          )
           .join('; ');
         throw new Error(
-          `QuestionsService: validation failed for question id="${String(id)}" — ${fields}`,
+          `QuestionsService: validation failed for question id="${id}" — ${fields}`,
         );
       }
       this.questions.push(dto as unknown as Question);

@@ -4,7 +4,13 @@ export class QuestionOutcomeDto {
   @IsString()
   question_id: string;
 
-  @IsIn(['first_try_correct', 'second_try_correct', 'third_try_correct', 'failed_through', 'abandoned'])
+  @IsIn([
+    'first_try_correct',
+    'second_try_correct',
+    'third_try_correct',
+    'failed_through',
+    'abandoned',
+  ])
   outcome: string;
 
   @IsInt()
