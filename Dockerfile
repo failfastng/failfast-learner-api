@@ -11,6 +11,8 @@ WORKDIR /app
 RUN addgroup -S app && adduser -S app -G app
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/prisma ./prisma
+COPY --from=builder /app/prisma.config.ts ./prisma.config.ts
 COPY package*.json ./
 USER app
 EXPOSE 3000
