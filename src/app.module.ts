@@ -4,12 +4,16 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { QuestionsModule } from './questions/questions.module';
 import { WaitlistModule } from './waitlist/waitlist.module';
+import { SessionsModule } from './sessions/sessions.module';
+import { EventsModule } from './events/events.module';
 
 @Module({
   imports: [
     ThrottlerModule.forRoot([{ ttl: 60_000, limit: 100 }]),
     QuestionsModule,
     WaitlistModule,
+    SessionsModule,
+    EventsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
