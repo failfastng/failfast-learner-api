@@ -1,4 +1,4 @@
-import { IsEmail, IsIn, IsOptional, IsString } from 'class-validator';
+import { IsEmail, IsIn, IsOptional, IsString, IsUUID } from 'class-validator';
 
 export class SignupDto {
   @IsEmail()
@@ -6,6 +6,10 @@ export class SignupDto {
 
   @IsIn(['summary_screen'])
   source: string;
+
+  @IsOptional()
+  @IsUUID()
+  session_uuid?: string;
 
   @IsOptional()
   @IsString()

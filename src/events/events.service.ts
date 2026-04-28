@@ -17,7 +17,13 @@ export class EventsService {
 
   async logShare(session_uuid: string): Promise<void> {
     try {
-      await this.prisma.shareEvent.create({ data: { session_uuid } });
+      await Promise.all([
+        this.prisma.shareEvent.create({ data: { session_uuid } }),
+        this.prisma.session.updateMany({
+          where: { session_uuid },
+          data: { clicked_share: true },
+        }),
+      ]);
     } catch (err) {
       this.logger.error('Failed to log share event', err);
     }

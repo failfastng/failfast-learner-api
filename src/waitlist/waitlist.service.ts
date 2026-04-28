@@ -16,5 +16,11 @@ export class WaitlistService {
       if ((err as { code?: string })?.code === 'P2002') return; // duplicate — silent swallow
       throw err;
     }
+    if (dto.session_uuid) {
+      await this.prisma.session.updateMany({
+        where: { session_uuid: dto.session_uuid },
+        data: { completed_waitlist_signup: true },
+      });
+    }
   }
 }
