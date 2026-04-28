@@ -13,8 +13,8 @@ export class WaitlistService {
         data: { email, source: dto.source },
       });
     } catch (err: unknown) {
-      if ((err as { code?: string })?.code === 'P2002') return; // duplicate — silent swallow
-      throw err;
+      if ((err as { code?: string })?.code !== 'P2002') throw err;
+      // duplicate email — fall through so the session row still gets updated
     }
     if (dto.session_uuid) {
       await this.prisma.session.updateMany({
