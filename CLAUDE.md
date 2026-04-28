@@ -2,6 +2,12 @@
 
 NestJS 11 REST API for FailFast Learner. Serves questions, records sessions, manages waitlist signups, and logs analytics events. Deployed as a Docker container behind Cloudflare, PostgreSQL via `pg.Pool` + Prisma 7.
 
+## Agent memory
+
+**Read [`MEMORY.md`](./MEMORY.md) before starting any task.** It contains hard-won patterns and mistakes from past sessions that are not obvious from the code alone.
+
+**Update `MEMORY.md` when you finish.** If you hit a non-obvious problem, discover a new invariant, make a decision that future agents should know about, or find that an existing entry is wrong — add or correct it. Keep entries concise: state the rule, why it exists, and how to apply it. This file is the institutional memory for this codebase.
+
 ## Stack
 
 - NestJS 11, TypeScript
