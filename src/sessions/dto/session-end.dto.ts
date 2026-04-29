@@ -10,6 +10,7 @@ import {
   IsArray,
 } from 'class-validator';
 import { Type } from 'class-transformer';
+import type { Subject } from '../../types/domain';
 import { QuestionOutcomeDto } from './question-outcome.dto';
 
 export class SessionEndDto {
@@ -20,7 +21,7 @@ export class SessionEndDto {
   display_name_hash!: string;
 
   @IsIn(['maths', 'english', 'economics'])
-  subject!: string;
+  subject!: Subject;
 
   @IsDateString()
   started_at!: string;

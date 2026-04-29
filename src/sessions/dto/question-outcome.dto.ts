@@ -1,4 +1,5 @@
 import { IsDateString, IsIn, IsInt, IsString, Min } from 'class-validator';
+import type { Outcome } from '../../types/domain';
 
 export class QuestionOutcomeDto {
   @IsString()
@@ -11,7 +12,7 @@ export class QuestionOutcomeDto {
     'failed_through',
     'abandoned',
   ])
-  outcome!: string;
+  outcome!: Outcome;
 
   @IsInt()
   @Min(0)
