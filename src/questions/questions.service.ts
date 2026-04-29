@@ -42,7 +42,7 @@ export class QuestionsService implements OnModuleInit {
           `QuestionsService: validation failed for question id="${id}" — ${fields}`,
         );
       }
-      this.questions.push(dto as unknown as Question);
+      this.questions.push(dto);
     }
   }
 
