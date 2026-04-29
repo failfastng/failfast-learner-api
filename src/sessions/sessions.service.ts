@@ -42,7 +42,7 @@ export class SessionsService {
           });
         }
       });
-    } catch (err) {
+    } catch (err: unknown) {
       this.logger.error('Failed to log session end', err);
       // swallow — client is fire-and-forget
     }

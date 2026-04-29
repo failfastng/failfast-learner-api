@@ -10,7 +10,7 @@ export class EventsService {
   async logReset(session_uuid: string): Promise<void> {
     try {
       await this.prisma.resetEvent.create({ data: { session_uuid } });
-    } catch (err) {
+    } catch (err: unknown) {
       this.logger.error('Failed to log reset event', err);
     }
   }
@@ -24,7 +24,7 @@ export class EventsService {
           data: { clicked_share: true },
         }),
       ]);
-    } catch (err) {
+    } catch (err: unknown) {
       this.logger.error('Failed to log share event', err);
     }
   }

@@ -25,7 +25,7 @@ export class SignupDto {
     typeof value === 'string' ? value.toLowerCase().trim() : value,
   )
   @IsEmail()
-  email: string;
+  email!: string;
 
   @Transform(({ value }: { value: unknown }) =>
     typeof value === 'string' ? value.trim() : value,
@@ -33,7 +33,7 @@ export class SignupDto {
   @IsString()
   @MinLength(1)
   @MaxLength(512)
-  source: string;
+  source!: string;
 
   @Transform(({ value }: { value: unknown }) => emptyToUndefined(value))
   @IsOptional()
