@@ -44,10 +44,19 @@ model QuestionOutcome {
 }
 
 model WaitlistSignup {
-  id         Int      @id @default(autoincrement())
-  email      String   @unique
-  source     String
-  created_at DateTime @default(now())
+  id           Int      @id @default(autoincrement())
+  email        String
+  name         String?
+  source       String
+  message      String?
+  school_size  String?
+  session_uuid String?
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+
+  @@unique([email, source])
+  @@index([source])
+  @@index([created_at])
 }
 
 model ResetEvent {

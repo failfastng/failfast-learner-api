@@ -17,7 +17,7 @@ NestJS 11 backend for the FailFast Learner app.
 |---|---|---|
 | QuestionsModule | GET /questions | Serves seed bank from memory |
 | SessionsModule | POST /sessions | Logs session + outcomes in one transaction |
-| WaitlistModule | POST /waitlist | Honeypot + throttle; swallows duplicate emails |
+| WaitlistModule | POST /waitlist | Honeypot + throttle; upsert `WaitlistSignup` by `(email, source)`; merge missing fields |
 | EventsModule | POST /events/reset | Logs reset events; returns 204 |
 
 ## Getting started

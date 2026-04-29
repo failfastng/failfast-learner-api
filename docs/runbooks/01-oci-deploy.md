@@ -215,8 +215,9 @@ POSTGRES_USER=failfast
 POSTGRES_PASSWORD=CHANGE_ME_STRONG_PASSWORD
 POSTGRES_DB=failfast
 
-# CORS — the Expo web app origin. Exactly this value; no trailing slash.
-CORS_ORIGIN=https://learner.failfastng.com
+# CORS — comma-separated browser origins (GET/POST). No trailing slashes.
+# Example includes the Expo learner web app and marketing site:
+# CORS_ORIGIN=https://learner.failfastng.com,https://www.failfastng.com
 
 # Node environment — leave as production
 NODE_ENV=production
@@ -225,7 +226,7 @@ NODE_ENV=production
 Rules:
 - `POSTGRES_PASSWORD` and the password in `DATABASE_URL` must be identical.
 - Use a strong random password (e.g. `openssl rand -base64 32` on the VM to generate one).
-- `CORS_ORIGIN` must be exactly `https://learner.failfastng.com` — no trailing slash, no wildcard.
+- `CORS_ORIGIN` lists comma-separated allowlist origins, no trailing slashes, no wildcards — include learner web and marketing site if both POST from the browser.
 - This file must not be readable by other users: `chmod 600 .env`
 
 ```bash

@@ -37,7 +37,7 @@ NestJS 11 REST API for FailFast Learner. Serves questions, records sessions, man
 The session analytics POST fires on `SummaryPhase` mount — before the user interacts with share/waitlist CTAs. Any event that fires after must also patch the `Session` row directly:
 
 - `POST /events/share` → `Promise.all([shareEvent.create, session.updateMany({ clicked_share: true })])`
-- `POST /waitlist` → create `WaitlistSignup`, then `session.updateMany({ completed_waitlist_signup: true })` **outside and after** the try/catch. An early `return` on P2002 (duplicate email) inside the catch blocks the session update for returning users.
+- `POST /waitlist` → upsert `WaitlistSignup` keyed by `(email, source)` with merge-only updates for repeats, then `session.updateMany({ completed_waitlist_signup: true })` when `session_uuid` is supplied. The honeypot path returns early and must not write signup rows or session rows.
 
 ## Adding a new event type
 

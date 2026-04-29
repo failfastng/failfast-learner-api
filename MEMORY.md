@@ -17,7 +17,7 @@ Run `npm run build` in the API repo before every commit. The user was explicit a
 
 When any event fires that relates to a session, always update `Session` in the same operation:
 - `POST /events/share` → `Promise.all([shareEvent.create, session.updateMany({ clicked_share: true })])`
-- `POST /waitlist` → `session.updateMany({ completed_waitlist_signup: true })` — placed **outside and after** the try/catch block. An early `return` inside catch for P2002 (duplicate email) previously blocked the session update for returning users.
+- `POST /waitlist` → upsert signup by `(email, source)` with merge-only nullable fields on repeat submits, then `session.updateMany({ completed_waitlist_signup: true })` when `session_uuid` is supplied. Bots that trip the honeypot never hit signup logic — keep session updates paired with genuine signup handling only.
 
 ## Adding new event types
 
