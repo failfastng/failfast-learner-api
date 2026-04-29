@@ -1,10 +1,11 @@
 import { INestApplication, ValidationPipe } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
+import { Server } from 'http';
 import request from 'supertest';
 import { AppModule } from '../src/app.module';
 
 describe('Sessions (e2e)', () => {
-  let app: INestApplication;
+  let app: INestApplication<Server>;
 
   beforeAll(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({

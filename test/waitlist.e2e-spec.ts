@@ -1,11 +1,12 @@
 import { INestApplication, ValidationPipe } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
+import { Server } from 'http';
 import request from 'supertest';
 import { AppModule } from '../src/app.module';
 import { PrismaService } from '../src/prisma/prisma.service';
 
 describe('Waitlist (e2e)', () => {
-  let app: INestApplication;
+  let app: INestApplication<Server>;
   let prisma: PrismaService;
 
   beforeAll(async () => {
