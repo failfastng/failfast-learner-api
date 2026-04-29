@@ -8,19 +8,20 @@ import {
   ArrayMinSize,
   ArrayMaxSize,
 } from 'class-validator';
+import type { Subject, Difficulty } from '../../types/domain';
 
 export class QuestionDto {
   @IsString()
   id!: string;
 
   @IsIn(['maths', 'english', 'economics'])
-  subject!: string;
+  subject!: Subject;
 
   @IsString()
   topic!: string;
 
   @IsIn(['easy', 'medium', 'hard'])
-  difficulty!: string;
+  difficulty!: Difficulty;
 
   @IsString()
   question_text!: string;
