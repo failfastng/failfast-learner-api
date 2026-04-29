@@ -2,7 +2,7 @@ import { IsDateString, IsIn, IsInt, IsString, Min } from 'class-validator';
 
 export class QuestionOutcomeDto {
   @IsString()
-  question_id: string;
+  question_id!: string;
 
   @IsIn([
     'first_try_correct',
@@ -11,16 +11,16 @@ export class QuestionOutcomeDto {
     'failed_through',
     'abandoned',
   ])
-  outcome: string;
+  outcome!: string;
 
   @IsInt()
   @Min(0)
-  success_points_earned: number;
+  success_points_earned!: number;
 
   @IsInt()
   @Min(0)
-  grit_points_earned: number;
+  grit_points_earned!: number;
 
   @IsDateString()
-  resolved_at: string;
+  resolved_at!: string;
 }

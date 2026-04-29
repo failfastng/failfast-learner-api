@@ -17,7 +17,7 @@ export class QuestionsService implements OnModuleInit {
     try {
       const content = fs.readFileSync(seedPath, 'utf-8');
       raw = JSON.parse(content) as unknown[];
-    } catch (err) {
+    } catch (err: unknown) {
       throw new Error(
         `QuestionsService: failed to read seed file at ${seedPath} — ${String(err)}`,
       );

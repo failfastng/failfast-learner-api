@@ -14,54 +14,54 @@ import { QuestionOutcomeDto } from './question-outcome.dto';
 
 export class SessionEndDto {
   @IsUUID()
-  session_uuid: string;
+  session_uuid!: string;
 
   @IsString()
-  display_name_hash: string;
+  display_name_hash!: string;
 
   @IsIn(['maths', 'english', 'economics'])
-  subject: string;
+  subject!: string;
 
   @IsDateString()
-  started_at: string;
+  started_at!: string;
 
   @IsDateString()
-  last_activity_at: string;
+  last_activity_at!: string;
 
   @IsDateString()
-  ended_at: string;
+  ended_at!: string;
 
   @IsBoolean()
-  ended_early: boolean;
+  ended_early!: boolean;
 
   @IsInt()
   @Min(0)
-  questions_answered: number;
+  questions_answered!: number;
 
   @IsInt()
   @Min(0)
-  questions_abandoned: number;
+  questions_abandoned!: number;
 
   @IsInt()
   @Min(0)
-  total_points: number;
+  total_points!: number;
 
   @IsInt()
   @Min(0)
-  success_points: number;
+  success_points!: number;
 
   @IsInt()
   @Min(0)
-  grit_points: number;
+  grit_points!: number;
 
   @IsBoolean()
-  completed_waitlist_signup: boolean;
+  completed_waitlist_signup!: boolean;
 
   @IsBoolean()
-  clicked_share: boolean;
+  clicked_share!: boolean;
 
   @IsArray()
   @ValidateNested({ each: true })
   @Type(() => QuestionOutcomeDto)
-  outcomes: QuestionOutcomeDto[];
+  outcomes!: QuestionOutcomeDto[];
 }
