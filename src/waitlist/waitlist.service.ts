@@ -12,7 +12,7 @@ function isFilled(value: string | null | undefined): value is string {
 export class WaitlistService {
   constructor(private readonly prisma: PrismaService) {}
 
-  async signup(dto: SignupDto): Promise<void> {
+  async signup(dto: SignupDto, country: string | null = null): Promise<void> {
     const email = dto.email.toLowerCase().trim();
     const source = dto.source.trim();
 
@@ -20,6 +20,7 @@ export class WaitlistService {
     const incomingMessage = dto.message?.trim();
     const incomingSchoolSize = dto.school_size ?? undefined;
     const incomingSessionUuid = dto.session_uuid ?? undefined;
+    const incomingCountry = country ?? undefined;
 
     let existing: WaitlistSignup | null =
       await this.prisma.waitlistSignup.findUnique({
@@ -38,6 +39,7 @@ export class WaitlistService {
         message?: string;
         school_size?: string;
         session_uuid?: string;
+        country?: string;
       } = {};
 
       if (!isFilled(existing.name) && incomingName) patch.name = incomingName;
@@ -47,6 +49,8 @@ export class WaitlistService {
         patch.school_size = incomingSchoolSize;
       if (!isFilled(existing.session_uuid) && incomingSessionUuid)
         patch.session_uuid = incomingSessionUuid;
+      if (!isFilled(existing.country) && incomingCountry)
+        patch.country = incomingCountry;
 
       if (Object.keys(patch).length > 0) {
         await this.prisma.waitlistSignup.update({
@@ -69,6 +73,7 @@ export class WaitlistService {
         message: incomingMessage,
         school_size: incomingSchoolSize,
         session_uuid: incomingSessionUuid,
+        country: incomingCountry,
       };
       try {
         await this.prisma.waitlistSignup.create({ data: createData });

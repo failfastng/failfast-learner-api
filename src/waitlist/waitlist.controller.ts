@@ -8,6 +8,7 @@ import {
 } from '@nestjs/common';
 import { Throttle } from '@nestjs/throttler';
 import type { Request } from 'express';
+import { GeoService } from '../geo/geo.service';
 import { HoneypotGuard } from './guards/honeypot.guard';
 import { WaitlistService } from './waitlist.service';
 import { SignupDto } from './dto/signup.dto';
@@ -16,7 +17,10 @@ type HoneypotRequest = Request & { __honeypot_triggered?: boolean };
 
 @Controller('waitlist')
 export class WaitlistController {
-  constructor(private readonly waitlistService: WaitlistService) {}
+  constructor(
+    private readonly waitlistService: WaitlistService,
+    private readonly geoService: GeoService,
+  ) {}
 
   @Post()
   @HttpCode(200)
@@ -27,6 +31,8 @@ export class WaitlistController {
     @Req() req: HoneypotRequest,
   ): Promise<void> {
     if (req.__honeypot_triggered) return;
-    await this.waitlistService.signup(dto);
+    const ip = this.geoService.extractIp(req);
+    const country = await this.geoService.lookupCountry(ip);
+    await this.waitlistService.signup(dto, country);
   }
 }

@@ -22,6 +22,7 @@ model Session {
   grit_points               Int
   completed_waitlist_signup Boolean           @default(false)
   clicked_share             Boolean           @default(false)
+  country                   String?
   outcomes                  QuestionOutcome[]
 
   @@index([subject])
@@ -51,6 +52,7 @@ model WaitlistSignup {
   message      String?
   school_size  String?
   session_uuid String?
+  country      String?
   created_at   DateTime @default(now())
   updated_at   DateTime @updatedAt
 

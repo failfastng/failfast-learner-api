@@ -8,7 +8,10 @@ export class SessionsService {
 
   constructor(private readonly prisma: PrismaService) {}
 
-  async logEnd(dto: SessionEndDto): Promise<void> {
+  async logEnd(
+    dto: SessionEndDto,
+    country: string | null = null,
+  ): Promise<void> {
     try {
       await this.prisma.$transaction(async (tx) => {
         await tx.session.create({
@@ -27,6 +30,7 @@ export class SessionsService {
             grit_points: dto.grit_points,
             completed_waitlist_signup: dto.completed_waitlist_signup,
             clicked_share: dto.clicked_share,
+            country,
           },
         });
         if (dto.outcomes.length > 0) {
