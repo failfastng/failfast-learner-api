@@ -129,7 +129,7 @@ This fires the `Deploy API` workflow on the `main` branch.
 
 4. **API still responds:**
    ```bash
-   curl https://api.learner.failfastng.com
+   curl https://learner-api.failfastng.com
    ```
    Should return `"Hello World!"` — no cold-start outage.
 

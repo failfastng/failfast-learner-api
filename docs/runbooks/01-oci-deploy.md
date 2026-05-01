@@ -314,7 +314,7 @@ docker compose logs postgres --tail 20
 2. Custom Records → **Add Record**
 3. Fill in:
    - **Record type:** A
-   - **Name (host):** `api.learner`
+   - **Name (host):** `learner-api`
    - **Data (value):** `145.241.243.20`
    - **TTL:** `300`
 4. Save.
@@ -339,7 +339,7 @@ TTL is 300 seconds. Full propagation typically takes 2–10 minutes; allow up to
 
 ```bash
 # LOCAL
-watch -n 30 'dig api.learner.failfastng.com +short'
+watch -n 30 'dig learner-api.failfastng.com +short'
 ```
 
 Expected: `145.241.243.20` appears. Press Ctrl+C once it does.
@@ -355,7 +355,7 @@ Look for log lines containing `certificate obtained successfully` or `tls.obtain
 
 If Caddy shows repeated ACME failures, check:
 1. Port 80 ingress rule is saved in the OCI security list (Step 2)
-2. `dig api.learner.failfastng.com +short` returns `145.241.243.20` (DNS propagated)
+2. `dig learner-api.failfastng.com +short` returns `145.241.243.20` (DNS propagated)
 3. `sudo systemctl status caddy` shows `active (running)`
 
 ---
@@ -368,7 +368,7 @@ Run each check. All five must pass before this runbook is complete.
 
 ```bash
 # LOCAL
-curl -s https://api.learner.failfastng.com
+curl -s https://learner-api.failfastng.com
 ```
 
 Expected: JSON response from NestJS (Hello World or a 404 body — both confirm TLS is terminating and traffic is reaching the container).
@@ -393,16 +393,16 @@ Wait 2 minutes, then from your local machine:
 
 ```bash
 # LOCAL
-curl -s https://api.learner.failfastng.com
+curl -s https://learner-api.failfastng.com
 ```
 
 Expected: same response as before the reboot. Docker Compose starts on reboot because both services have `restart: unless-stopped` and Docker itself is `systemctl enable`d.
 
 **4. TLS certificate is valid:**
 
-Open `https://api.learner.failfastng.com` in a browser. Click the padlock → Certificate. Verify:
+Open `https://learner-api.failfastng.com` in a browser. Click the padlock → Certificate. Verify:
 - Issued by: Let's Encrypt
-- Common Name (CN): `api.learner.failfastng.com`
+- Common Name (CN): `learner-api.failfastng.com`
 - Not expired
 
 **5. Email records are untouched (MX sanity check):**
