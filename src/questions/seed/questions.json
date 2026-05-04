@@ -5,9 +5,15 @@
         "topic": "linear_equations",
         "difficulty": "medium",
         "question_text": "If 4(x − 3) = 2x + 6, what is the value of x?",
-        "options": ["4.5", "6", "9", "18"],
+        "options": [
+            "4.5",
+            "6",
+            "9",
+            "18"
+        ],
         "correct_index": 2,
-        "source": "FailFast original (algebra)"
+        "source": "FailFast original (algebra)",
+        "explanation": "4x − 12 = 2x + 6 → 2x = 18 → x = 9"
     },
     {
         "id": "q_math_002",
@@ -15,9 +21,15 @@
         "topic": "percentages",
         "difficulty": "medium",
         "question_text": "A trader sold a phone for ₦24,000, making a 20% profit. What did the phone cost the trader?",
-        "options": ["₦19,200", "₦20,000", "₦22,000", "₦28,800"],
+        "options": [
+            "₦19,200",
+            "₦20,000",
+            "₦22,000",
+            "₦28,800"
+        ],
         "correct_index": 1,
-        "source": "FailFast original (word problems)"
+        "source": "FailFast original (word problems)",
+        "explanation": "Cost × 1.20 = ₦24,000 → Cost = ₦24,000 / 1.20 = ₦20,000"
     },
     {
         "id": "q_math_003",
@@ -25,9 +37,15 @@
         "topic": "probability",
         "difficulty": "medium",
         "question_text": "A bag contains 5 red balls and 3 blue balls. If two balls are drawn one after the other without replacement, what is the probability that both are red?",
-        "options": ["5/14", "25/64", "5/16", "15/56"],
+        "options": [
+            "5/14",
+            "25/64",
+            "5/16",
+            "15/56"
+        ],
         "correct_index": 0,
-        "source": "FailFast original (probability)"
+        "source": "FailFast original (probability)",
+        "explanation": "P(both red) = (5/8) × (4/7) = 20/56 = 5/14"
     },
     {
         "id": "q_math_004",
@@ -35,9 +53,15 @@
         "topic": "geometry_volume",
         "difficulty": "medium",
         "question_text": "A cylindrical water tank has a radius of 7 cm and a height of 10 cm. Find its volume. (Take π = 22/7)",
-        "options": ["220 cm³", "1,540 cm³", "440 cm³", "154 cm³"],
+        "options": [
+            "220 cm³",
+            "1,540 cm³",
+            "440 cm³",
+            "154 cm³"
+        ],
         "correct_index": 1,
-        "source": "FailFast original (geometry)"
+        "source": "FailFast original (geometry)",
+        "explanation": "V = πr²h = (22/7) × 49 × 10 = 1,540"
     },
     {
         "id": "q_math_005",
@@ -45,9 +69,15 @@
         "topic": "calculus_derivatives",
         "difficulty": "medium",
         "question_text": "Find the derivative of f(x) = 3x² − 4x + 7.",
-        "options": ["6x − 4", "6x − 4 + 7", "3x − 4", "6x² − 4"],
+        "options": [
+            "6x − 4",
+            "6x − 4 + 7",
+            "3x − 4",
+            "6x² − 4"
+        ],
         "correct_index": 0,
-        "source": "FailFast original (calculus)"
+        "source": "FailFast original (calculus)",
+        "explanation": "d/dx(3x²) = 6x; d/dx(−4x) = −4; d/dx(7) = 0"
     },
     {
         "id": "q_math_006",
@@ -55,9 +85,15 @@
         "topic": "quadratic_equations",
         "difficulty": "medium",
         "question_text": "Solve the equation x² − 5x + 6 = 0.",
-        "options": ["x = 2 or x = 3", "x = −2 or x = −3", "x = 1 or x = 6", "x = −1 or x = −6"],
+        "options": [
+            "x = 2 or x = 3",
+            "x = −2 or x = −3",
+            "x = 1 or x = 6",
+            "x = −1 or x = −6"
+        ],
         "correct_index": 0,
-        "source": "FailFast original (algebra)"
+        "source": "FailFast original (algebra)",
+        "explanation": "Factorisation: (x − 2)(x − 3) = 0 → x = 2 or x = 3"
     },
     {
         "id": "q_math_007",
@@ -65,9 +101,15 @@
         "topic": "simultaneous_equations",
         "difficulty": "medium",
         "question_text": "Solve the simultaneous equations: 2x + y = 7 and x − y = 2.",
-        "options": ["x = 3, y = 1", "x = 2, y = 0", "x = 4, y = 2", "x = 1, y = 5"],
+        "options": [
+            "x = 3, y = 1",
+            "x = 2, y = 0",
+            "x = 4, y = 2",
+            "x = 1, y = 5"
+        ],
         "correct_index": 0,
-        "source": "FailFast original (algebra)"
+        "source": "FailFast original (algebra)",
+        "explanation": "Add equations: 3x = 9 → x = 3. Substitute: y = 7 − 6 = 1"
     },
     {
         "id": "q_math_008",
@@ -75,9 +117,15 @@
         "topic": "indices_exponents",
         "difficulty": "medium",
         "question_text": "Simplify: 3⁵ ÷ 3²",
-        "options": ["3³", "3⁷", "3¹⁰", "1³"],
+        "options": [
+            "3³",
+            "3⁷",
+            "3¹⁰",
+            "1³"
+        ],
         "correct_index": 0,
-        "source": "FailFast original (indices)"
+        "source": "FailFast original (indices)",
+        "explanation": "Division of indices: subtract exponents. 3⁵⁻² = 3³"
     },
     {
         "id": "q_math_009",
@@ -85,9 +133,15 @@
         "topic": "logarithms",
         "difficulty": "medium",
         "question_text": "If log₂ 8 = x, what is the value of x?",
-        "options": ["3", "4", "16", "1/3"],
+        "options": [
+            "3",
+            "4",
+            "16",
+            "1/3"
+        ],
         "correct_index": 0,
-        "source": "FailFast original (logarithms)"
+        "source": "FailFast original (logarithms)",
+        "explanation": "2³ = 8, so log₂ 8 = 3"
     },
     {
         "id": "q_math_010",
@@ -95,9 +149,15 @@
         "topic": "work_rate",
         "difficulty": "medium",
         "question_text": "A tap can fill a tank in 6 hours, while another tap can fill the same tank in 3 hours. How long will it take to fill the tank if both taps are opened together?",
-        "options": ["2 hours", "4.5 hours", "9 hours", "1.5 hours"],
+        "options": [
+            "2 hours",
+            "4.5 hours",
+            "9 hours",
+            "1.5 hours"
+        ],
         "correct_index": 0,
-        "source": "FailFast original (word problems)"
+        "source": "FailFast original (word problems)",
+        "explanation": "Combined rate: 1/6 + 1/3 = 1/2 per hour. Time = 1 ÷ (1/2) = 2 hours"
     },
     {
         "id": "q_math_011",
@@ -105,9 +165,15 @@
         "topic": "simple_interest",
         "difficulty": "medium",
         "question_text": "Find the simple interest on ₦15,000 invested for 4 years at 8% per annum.",
-        "options": ["₦4,800", "₦1,200", "₦19,800", "₦480"],
+        "options": [
+            "₦4,800",
+            "₦1,200",
+            "₦19,800",
+            "₦480"
+        ],
         "correct_index": 0,
-        "source": "FailFast original (word problems)"
+        "source": "FailFast original (word problems)",
+        "explanation": "SI = PRT/100 = (15,000 × 8 × 4) / 100 = 4,800"
     },
     {
         "id": "q_math_012",
@@ -115,9 +181,15 @@
         "topic": "geometry_angles",
         "difficulty": "medium",
         "question_text": "Two parallel lines are cut by a transversal. One of the angles formed measures 65°. What is the measure of its co-interior angle?",
-        "options": ["115°", "65°", "25°", "130°"],
+        "options": [
+            "115°",
+            "65°",
+            "25°",
+            "130°"
+        ],
         "correct_index": 0,
-        "source": "FailFast original (geometry)"
+        "source": "FailFast original (geometry)",
+        "explanation": "Co-interior angles on parallel lines sum to 180°. So 180 − 65 = 115°"
     },
     {
         "id": "q_math_013",
@@ -125,9 +197,15 @@
         "topic": "geometry_pythagoras",
         "difficulty": "medium",
         "question_text": "A right-angled triangle has legs of length 5 cm and 12 cm. What is the length of the hypotenuse?",
-        "options": ["13 cm", "17 cm", "169 cm", "119 cm"],
+        "options": [
+            "13 cm",
+            "17 cm",
+            "169 cm",
+            "119 cm"
+        ],
         "correct_index": 0,
-        "source": "FailFast original (geometry)"
+        "source": "FailFast original (geometry)",
+        "explanation": "√(5² + 12²) = √(25 + 144) = √169 = 13"
     },
     {
         "id": "q_math_014",
@@ -135,9 +213,15 @@
         "topic": "trigonometry",
         "difficulty": "medium",
         "question_text": "What is the value of sin 30°?",
-        "options": ["1/2", "√3/2", "1", "√2/2"],
+        "options": [
+            "1/2",
+            "√3/2",
+            "1",
+            "√2/2"
+        ],
         "correct_index": 0,
-        "source": "FailFast original (trigonometry)"
+        "source": "FailFast original (trigonometry)",
+        "explanation": "sin 30° = 1/2 is a standard trigonometric value"
     },
     {
         "id": "q_math_015",
@@ -145,9 +229,15 @@
         "topic": "statistics_mean",
         "difficulty": "medium",
         "question_text": "The marks of 5 students in a test are: 12, 18, 15, 10, 20. What is the mean mark?",
-        "options": ["15", "75", "14", "10"],
+        "options": [
+            "15",
+            "75",
+            "14",
+            "10"
+        ],
         "correct_index": 0,
-        "source": "FailFast original (statistics)"
+        "source": "FailFast original (statistics)",
+        "explanation": "Sum = 75. Mean = 75 / 5 = 15"
     },
     {
         "id": "q_engl_001",
@@ -156,194 +246,207 @@
         "difficulty": "easy",
         "question_text": "Choose the option that best explains the sentence: \"The new Headmaster hoped that his men would pull together.\"",
         "options": [
-          "He expected that the men would cooperate with him",
-          "He thought that the men would compose themselves at work",
-          "He was certain that they would resign en masse",
-          "He was certain that their condition would improve under him"
+            "He expected that the men would cooperate with him",
+            "He thought that the men would compose themselves at work",
+            "He was certain that they would resign en masse",
+            "He was certain that their condition would improve under him"
         ],
         "correct_index": 0,
-        "source": "JAMB UTME 2005, stem revised"
-      },
-      {
+        "source": "JAMB UTME 2005, stem revised",
+        "explanation": "\"Pull together\" idiomatically means to cooperate"
+    },
+    {
         "id": "q_engl_002",
         "subject": "english",
         "topic": "vocabulary_synonym",
         "difficulty": "medium",
         "question_text": "Choose the option nearest in meaning to the word in italics: \"He is a *stringer* for a newspaper.\"",
         "options": [
-          "a financier of",
-          "an editor of",
-          "a freelancer for",
-          "a reporter for"
+            "a financier of",
+            "an editor of",
+            "a freelancer for",
+            "a reporter for"
         ],
         "correct_index": 2,
-        "source": "JAMB UTME 2002, stem revised"
-      },
-      {
+        "source": "JAMB UTME 2002, stem revised",
+        "explanation": "A stringer is a freelance journalist who contributes to a newspaper"
+    },
+    {
         "id": "q_engl_003",
         "subject": "english",
         "topic": "grammar_pronouns",
         "difficulty": "easy",
         "question_text": "Fill the gap with the most appropriate option: \"_____ went to the stadium to watch a football match.\"",
         "options": [
-          "Amadi and me",
-          "Amadi and I",
-          "Me and Amadi",
-          "Amadi and myself"
+            "Amadi and me",
+            "Amadi and I",
+            "Me and Amadi",
+            "Amadi and myself"
         ],
         "correct_index": 1,
-        "source": "JAMB UTME 2007, stem revised"
-      },
-      {
+        "source": "JAMB UTME 2007, stem revised",
+        "explanation": "Subject pronoun \"I\" is correct in subject position"
+    },
+    {
         "id": "q_engl_004",
         "subject": "english",
         "topic": "grammar_tense",
         "difficulty": "medium",
         "question_text": "Fill the gap with the most appropriate option: \"I knocked on his door, but he _____.\"",
         "options": [
-          "has already gone",
-          "left already",
-          "would already leave",
-          "had already left"
+            "has already gone",
+            "left already",
+            "would already leave",
+            "had already left"
         ],
         "correct_index": 3,
-        "source": "JAMB UTME 2008, stem revised, distractor 1 corrected"
-      },
-      {
+        "source": "JAMB UTME 2008, stem revised, distractor 1 corrected",
+        "explanation": "Past perfect correctly shows that the leaving happened before the knocking"
+    },
+    {
         "id": "q_engl_005",
         "subject": "english",
         "topic": "idiom_interpretation",
         "difficulty": "easy",
         "question_text": "Choose the option that best explains the sentence: \"The first time Paul met Ngozi, her beauty caught his eye.\"",
         "options": [
-          "Ngozi admired Paul",
-          "Paul recognized Ngozi",
-          "Ngozi attracted Paul",
-          "Paul surprised Ngozi"
+            "Ngozi admired Paul",
+            "Paul recognized Ngozi",
+            "Ngozi attracted Paul",
+            "Paul surprised Ngozi"
         ],
         "correct_index": 2,
-        "source": "JAMB UTME 2017, stem revised"
-      },
-      {
+        "source": "JAMB UTME 2017, stem revised",
+        "explanation": "\"Caught his eye\" idiomatically means attracted attention or interest"
+    },
+    {
         "id": "q_engl_006",
         "subject": "english",
         "topic": "vocabulary_synonym",
         "difficulty": "hard",
         "question_text": "Choose the option nearest in meaning to the word in italics: \"We were warned not to indulge in *recriminations*.\"",
         "options": [
-          "counter-charges",
-          "indiscretions",
-          "accusations",
-          "frivolous allegations"
+            "counter-charges",
+            "indiscretions",
+            "accusations",
+            "frivolous allegations"
         ],
         "correct_index": 0,
-        "source": "JAMB UTME 2007, stem revised"
-      },
-      {
+        "source": "JAMB UTME 2007, stem revised",
+        "explanation": "Recriminations are mutual accusations or counter-accusations"
+    },
+    {
         "id": "q_engl_007",
         "subject": "english",
         "topic": "vocabulary_antonym",
         "difficulty": "medium",
         "question_text": "Choose the option opposite in meaning to the word in italics: \"A *tentative* solution was provided.\"",
         "options": [
-          "convincing",
-          "provisional",
-          "amicable",
-          "definite"
+            "convincing",
+            "provisional",
+            "amicable",
+            "definite"
         ],
         "correct_index": 3,
-        "source": "JAMB UTME 2006, stem revised"
-      },
-      {
+        "source": "JAMB UTME 2006, stem revised",
+        "explanation": "Tentative means provisional or uncertain; definite is its direct antonym"
+    },
+    {
         "id": "q_engl_008",
         "subject": "english",
         "topic": "grammar_conditionals",
         "difficulty": "medium",
         "question_text": "Choose the option that best explains the sentence: \"If he had spoken up, he wouldn't have been given.\"",
         "options": [
-          "He spoke up and was given",
-          "He wasn't given because he spoke up",
-          "He didn't speak up and wasn't given",
-          "He was given because he didn't speak up"
+            "He spoke up and was given",
+            "He wasn't given because he spoke up",
+            "He didn't speak up and wasn't given",
+            "He was given because he didn't speak up"
         ],
         "correct_index": 3,
-        "source": "JAMB UTME 2019, stem revised"
-      },
-      {
+        "source": "JAMB UTME 2019, stem revised",
+        "explanation": "Third conditional: the actual past was \"didn't speak up, was given\" — the hypothetical reverses both"
+    },
+    {
         "id": "q_engl_009",
         "subject": "english",
         "topic": "idiom_interpretation",
         "difficulty": "easy",
         "question_text": "Choose the option nearest in meaning to the underlined idiom: \"Audu was *taken bad* in the middle of the night.\"",
         "options": [
-          "He was caught",
-          "He was robbed",
-          "He was ill",
-          "He was drunk"
+            "He was caught",
+            "He was robbed",
+            "He was ill",
+            "He was drunk"
         ],
         "correct_index": 2,
-        "source": "JAMB UTME 2002, stem revised"
-      },
-      {
+        "source": "JAMB UTME 2002, stem revised",
+        "explanation": "\"Taken bad\" idiomatically means suddenly fell ill"
+    },
+    {
         "id": "q_engl_010",
         "subject": "english",
         "topic": "vocabulary_synonym",
         "difficulty": "easy",
         "question_text": "Choose the word nearest in meaning to the underlined word: \"I went through his work; it was *gibberish*.\"",
         "options": [
-          "meaningless",
-          "meaningful",
-          "brutal",
-          "too simple"
+            "meaningless",
+            "meaningful",
+            "brutal",
+            "too simple"
         ],
         "correct_index": 0,
-        "source": "JAMB UTME 2020, stem revised"
-      },
-      {
+        "source": "JAMB UTME 2020, stem revised",
+        "explanation": "Gibberish means unintelligible or meaningless speech or text"
+    },
+    {
         "id": "q_engl_011",
         "subject": "english",
         "topic": "idiom_interpretation",
         "difficulty": "medium",
         "question_text": "Choose the option that best explains the sentence: \"The minister considered the ministry's budget to be a drop in the ocean in view of the number of projects in the pipeline.\"",
         "options": [
-          "The pipeline project across the ocean will be abandoned unless budgetary allocation improves",
-          "The amount available may be inadequate for projected expenditure",
-          "The minister may be dropped for failing to complete a number of projects",
-          "The money approved cannot complete the pipeline project across the ocean"
+            "The pipeline project across the ocean will be abandoned unless budgetary allocation improves",
+            "The amount available may be inadequate for projected expenditure",
+            "The minister may be dropped for failing to complete a number of projects",
+            "The money approved cannot complete the pipeline project across the ocean"
         ],
         "correct_index": 1,
-        "source": "JAMB UTME 2014, typos corrected"
-      },
-      {
+        "source": "JAMB UTME 2014, typos corrected",
+        "explanation": "\"Drop in the ocean\" means very small relative to need; \"in the pipeline\" means planned or upcoming"
+    },
+    {
         "id": "q_engl_012",
         "subject": "english",
         "topic": "vocabulary_synonym",
         "difficulty": "hard",
         "question_text": "Choose the option nearest in meaning to the underlined word: \"The circular *supersedes* all previous correspondence on the matter.\"",
         "options": [
-          "supports",
-          "displaces",
-          "eliminates",
-          "circumvents"
+            "supports",
+            "displaces",
+            "eliminates",
+            "circumvents"
         ],
         "correct_index": 1,
-        "source": "JAMB UTME 2011, stem revised"
-      },
-      {
+        "source": "JAMB UTME 2011, stem revised",
+        "explanation": "To supersede is to take the place of, replace, or displace"
+    },
+    {
         "id": "q_engl_013",
         "subject": "english",
         "topic": "vocabulary_gap_fill",
         "difficulty": "easy",
         "question_text": "Fill the gap with the most appropriate option: \"I do not think any sane person would have acted in such a _____ manner.\"",
         "options": [
-          "rational",
-          "composed",
-          "secret",
-          "cruel"
+            "rational",
+            "composed",
+            "secret",
+            "cruel"
         ],
         "correct_index": 3,
-        "source": "JAMB UTME 2001, stem revised"
-      },
+        "source": "JAMB UTME 2001, stem revised",
+        "explanation": "A sane person would not act cruelly; \"cruel\" contrasts correctly with \"sane\""
+    },
     {
         "id": "q_engl_014",
         "subject": "english",
@@ -351,13 +454,14 @@
         "difficulty": "medium",
         "question_text": "Choose the option that best explains the sentence: \"If the trader paid in full, his order was not pruned down.\"",
         "options": [
-          "The trader who made full payment did not have his order reduced",
-          "The trader who made some payment did not have his order delayed",
-          "Unless the trader paid in full his order would be rejected",
-          "As the trader did not increase his order, he did not need to pay in full"
+            "The trader who made full payment did not have his order reduced",
+            "The trader who made some payment did not have his order delayed",
+            "Unless the trader paid in full his order would be rejected",
+            "As the trader did not increase his order, he did not need to pay in full"
         ],
         "correct_index": 0,
-        "source": "JAMB UTME 2005"
+        "source": "JAMB UTME 2005",
+        "explanation": "\"Pruned down\" means reduced or cut back"
     },
     {
         "id": "q_engl_015",
@@ -366,13 +470,14 @@
         "difficulty": "medium",
         "question_text": "Choose the option that best explains the sentence: \"The organization is constantly in a state of flux.\"",
         "options": [
-          "There are periodic changes in the organization",
-          "The organization is facing a difficult period",
-          "The organization is experiencing good times",
-          "The organization is moribund"
+            "There are periodic changes in the organization",
+            "The organization is facing a difficult period",
+            "The organization is experiencing good times",
+            "The organization is moribund"
         ],
         "correct_index": 0,
-        "source": "JAMB UTME 2018, typo corrected"
+        "source": "JAMB UTME 2018, typo corrected",
+        "explanation": "\"In a state of flux\" means undergoing constant change"
     },
     {
         "id": "q_econ_001",
@@ -381,222 +486,237 @@
         "difficulty": "easy",
         "question_text": "Economics is the study of human behaviour as it relates to the",
         "options": [
-          "efficient allocation of resources",
-          "operation of companies",
-          "production of goods",
-          "generation of income"
+            "efficient allocation of resources",
+            "operation of companies",
+            "production of goods",
+            "generation of income"
         ],
         "correct_index": 0,
-        "source": "JAMB UTME 2010"
-      },
-      {
+        "source": "JAMB UTME 2010",
+        "explanation": "Robbins' definition: economics studies how human behaviour allocates scarce resources to unlimited wants"
+    },
+    {
         "id": "q_econ_002",
         "subject": "economics",
         "topic": "market_systems",
         "difficulty": "easy",
         "question_text": "A typical feature of a market economy is that",
         "options": [
-          "all producers make profit",
-          "full employment exists",
-          "consumer sovereignty exists",
-          "there is equality of economic agents"
+            "all producers make profit",
+            "full employment exists",
+            "consumer sovereignty exists",
+            "there is equality of economic agents"
         ],
         "correct_index": 2,
-        "source": "JAMB UTME 2009"
-      },
-      {
+        "source": "JAMB UTME 2009",
+        "explanation": "In market economies, consumer demand drives production decisions — this is consumer sovereignty"
+    },
+    {
         "id": "q_econ_003",
         "subject": "economics",
         "topic": "utility_theory",
         "difficulty": "medium",
         "question_text": "A major assumption in cardinal utility theory is that",
         "options": [
-          "utility is measurable",
-          "utility is not measurable",
-          "total utility equals marginal utility",
-          "total utility is constant"
+            "utility is measurable",
+            "utility is not measurable",
+            "total utility equals marginal utility",
+            "total utility is constant"
         ],
         "correct_index": 0,
-        "source": "JAMB UTME 2009"
-      },
-      {
+        "source": "JAMB UTME 2009",
+        "explanation": "Cardinal utility theory assumes utility can be measured numerically, in \"utils\""
+    },
+    {
         "id": "q_econ_004",
         "subject": "economics",
         "topic": "demand_supply",
         "difficulty": "easy",
         "question_text": "An excess demand for beans will result from",
         "options": [
-          "an increase in the price of beans",
-          "a decrease in the price of beans",
-          "an increase in the supply of beans",
-          "a decrease in the supply of beans"
+            "an increase in the price of beans",
+            "a decrease in the price of beans",
+            "an increase in the supply of beans",
+            "a decrease in the supply of beans"
         ],
         "correct_index": 1,
-        "source": "JAMB UTME 2010"
-      },
-      {
+        "source": "JAMB UTME 2010",
+        "explanation": "A lower price increases quantity demanded relative to fixed supply, creating excess demand"
+    },
+    {
         "id": "q_econ_005",
         "subject": "economics",
         "topic": "demand_supply",
         "difficulty": "medium",
         "question_text": "A supply curve is positively sloped because",
         "options": [
-          "supply always exceeds demand",
-          "demand always exceeds supply",
-          "price is an incentive to consumers",
-          "price is an incentive to producers"
+            "supply always exceeds demand",
+            "demand always exceeds supply",
+            "price is an incentive to consumers",
+            "price is an incentive to producers"
         ],
         "correct_index": 3,
-        "source": "JAMB UTME 2009"
-      },
-      {
+        "source": "JAMB UTME 2009",
+        "explanation": "Higher prices motivate producers to supply more, hence the positive slope"
+    },
+    {
         "id": "q_econ_006",
         "subject": "economics",
         "topic": "demand_supply",
         "difficulty": "medium",
         "question_text": "The demand curve for factors of production",
         "options": [
-          "is perfectly elastic",
-          "slopes downwards",
-          "slopes upwards",
-          "is perfectly inelastic"
+            "is perfectly elastic",
+            "slopes downwards",
+            "slopes upwards",
+            "is perfectly inelastic"
         ],
         "correct_index": 1,
-        "source": "JAMB UTME 2010"
-      },
-      {
+        "source": "JAMB UTME 2010",
+        "explanation": "Like product demand curves, factor demand curves slope downward: more factor demanded at lower price"
+    },
+    {
         "id": "q_econ_007",
         "subject": "economics",
         "topic": "market_structures",
         "difficulty": "medium",
         "question_text": "The supply curve of a perfectly competitive firm is identical to its",
         "options": [
-          "total cost",
-          "marginal cost",
-          "fixed cost",
-          "variable cost"
+            "total cost",
+            "marginal cost",
+            "fixed cost",
+            "variable cost"
         ],
         "correct_index": 1,
-        "source": "JAMB UTME 2009"
-      },
-      {
+        "source": "JAMB UTME 2009",
+        "explanation": "In perfect competition, firms produce where P = MC; the MC curve above AVC is the firm's supply curve"
+    },
+    {
         "id": "q_econ_008",
         "subject": "economics",
         "topic": "production",
         "difficulty": "easy",
         "question_text": "The primary motive for an individual engaging in production is to",
         "options": [
-          "make profit",
-          "redistribute wealth",
-          "satisfy basic human wants",
-          "put inputs into use"
+            "make profit",
+            "redistribute wealth",
+            "satisfy basic human wants",
+            "put inputs into use"
         ],
         "correct_index": 0,
-        "source": "JAMB UTME 2010"
-      },
-      {
+        "source": "JAMB UTME 2010",
+        "explanation": "In standard economic theory, profit is the primary motive for individual producers"
+    },
+    {
         "id": "q_econ_009",
         "subject": "economics",
         "topic": "business_organization",
         "difficulty": "medium",
         "question_text": "The major problem confronting a sole proprietor is",
         "options": [
-          "high level of risk",
-          "limited expertise",
-          "limited source of capital",
-          "high taxation"
+            "high level of risk",
+            "limited expertise",
+            "limited source of capital",
+            "high taxation"
         ],
         "correct_index": 2,
-        "source": "JAMB UTME 2009"
-      },
-      {
+        "source": "JAMB UTME 2009",
+        "explanation": "The defining constraint on sole proprietorships: capital sources are limited to personal savings, family loans, and small bank loans"
+    },
+    {
         "id": "q_econ_010",
         "subject": "economics",
         "topic": "money_banking",
         "difficulty": "medium",
         "question_text": "A manufacturer who wants to build a new plant will source funds from the",
         "options": [
-          "commercial banks",
-          "money market",
-          "capital market",
-          "government"
+            "commercial banks",
+            "money market",
+            "capital market",
+            "government"
         ],
         "correct_index": 2,
-        "source": "JAMB UTME 2009"
-      },
-      {
+        "source": "JAMB UTME 2009",
+        "explanation": "Long-term financing (5+ years) for major capital projects comes from the capital market via stocks or bonds"
+    },
+    {
         "id": "q_econ_011",
         "subject": "economics",
         "topic": "money_banking",
         "difficulty": "hard",
         "question_text": "The ability of commercial banks to create money depends on the",
         "options": [
-          "cash reserve ratio",
-          "liquidity ratio",
-          "interest rate",
-          "capital base"
+            "cash reserve ratio",
+            "liquidity ratio",
+            "interest rate",
+            "capital base"
         ],
         "correct_index": 1,
-        "source": "JAMB UTME 2009, distractor 0 corrected"
-      },
-      {
+        "source": "JAMB UTME 2009, distractor 0 corrected",
+        "explanation": "Banks' money creation capacity depends on the liquidity ratio, which determines the money multiplier"
+    },
+    {
         "id": "q_econ_012",
         "subject": "economics",
         "topic": "nigerian_economy",
         "difficulty": "medium",
         "question_text": "In Nigeria, the huge public debt is as a result of",
         "options": [
-          "balanced budgeting",
-          "surplus budgeting",
-          "deficit budgeting",
-          "zero budgeting"
+            "balanced budgeting",
+            "surplus budgeting",
+            "deficit budgeting",
+            "zero budgeting"
         ],
         "correct_index": 2,
-        "source": "JAMB UTME 2010"
-      },
-      {
+        "source": "JAMB UTME 2010",
+        "explanation": "Spending more than revenue requires borrowing, which increases public debt"
+    },
+    {
         "id": "q_econ_013",
         "subject": "economics",
         "topic": "nigerian_economy",
         "difficulty": "hard",
         "question_text": "Guided deregulation as currently practiced in Nigeria implies that",
         "options": [
-          "market forces determine interest and exchange rates",
-          "government alone determines interest and exchange rates",
-          "market forces and government determine interest and exchange rates",
-          "exchange rate is regulated while interest rate is fixed"
+            "market forces determine interest and exchange rates",
+            "government alone determines interest and exchange rates",
+            "market forces and government determine interest and exchange rates",
+            "exchange rate is regulated while interest rate is fixed"
         ],
         "correct_index": 2,
-        "source": "JAMB UTME 2009"
-      },
-      {
+        "source": "JAMB UTME 2009",
+        "explanation": "\"Guided\" means the government participates while market forces also operate — a hybrid model"
+    },
+    {
         "id": "q_econ_014",
         "subject": "economics",
         "topic": "statistics",
         "difficulty": "easy",
         "question_text": "The standard deviation of a set of data is",
         "options": [
-          "always measured from the mode",
-          "always measured from the median",
-          "the most representative of averages",
-          "a measure of dispersion"
+            "always measured from the mode",
+            "always measured from the median",
+            "the most representative of averages",
+            "a measure of dispersion"
         ],
         "correct_index": 3,
-        "source": "JAMB UTME 2010"
-      },
-      {
+        "source": "JAMB UTME 2010",
+        "explanation": "Standard deviation quantifies how spread out values are from the mean"
+    },
+    {
         "id": "q_econ_015",
         "subject": "economics",
         "topic": "public_policy",
         "difficulty": "medium",
         "question_text": "National development plans in Nigeria fail mainly because of",
         "options": [
-          "over dependence on foreign aids",
-          "poor implementation strategies",
-          "inadequate funding of projects",
-          "shortage of skilled manpower"
+            "over dependence on foreign aids",
+            "poor implementation strategies",
+            "inadequate funding of projects",
+            "shortage of skilled manpower"
         ],
         "correct_index": 1,
-        "source": "JAMB UTME 2010"
-      }
+        "source": "JAMB UTME 2010",
+        "explanation": "Standard textbook answer: Nigerian development plans are reasonable on paper but fail at execution"
+    }
 ]

@@ -16,4 +16,5 @@ export interface Question {
   options: string[];
   correct_index: number;
   source: string;
+  explanation: string;
 }

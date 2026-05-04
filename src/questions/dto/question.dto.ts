@@ -39,4 +39,7 @@ export class QuestionDto {
 
   @IsString()
   source!: string;
+
+  @IsString()
+  explanation!: string;
 }
