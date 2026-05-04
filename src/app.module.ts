@@ -6,6 +6,7 @@ import { QuestionsModule } from './questions/questions.module';
 import { WaitlistModule } from './waitlist/waitlist.module';
 import { SessionsModule } from './sessions/sessions.module';
 import { EventsModule } from './events/events.module';
+import { ReviewsModule } from './reviews/reviews.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { EventsModule } from './events/events.module';
     WaitlistModule,
     SessionsModule,
     EventsModule,
+    ReviewsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
