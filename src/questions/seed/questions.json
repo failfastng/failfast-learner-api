@@ -372,7 +372,7 @@
         "subject": "english",
         "topic": "idiom_interpretation",
         "difficulty": "easy",
-        "question_text": "Choose the option nearest in meaning to the underlined idiom: \"Audu was *taken bad* in the middle of the night.\"",
+        "question_text": "Choose the option nearest in meaning to the marked idiom: \"Audu was *taken bad* in the middle of the night.\"",
         "options": [
             "He was caught",
             "He was robbed",
@@ -388,7 +388,7 @@
         "subject": "english",
         "topic": "vocabulary_synonym",
         "difficulty": "easy",
-        "question_text": "Choose the word nearest in meaning to the underlined word: \"I went through his work; it was *gibberish*.\"",
+        "question_text": "Choose the word nearest in meaning to the marked word: \"I went through his work; it was *gibberish*.\"",
         "options": [
             "meaningless",
             "meaningful",
@@ -420,7 +420,7 @@
         "subject": "english",
         "topic": "vocabulary_synonym",
         "difficulty": "hard",
-        "question_text": "Choose the option nearest in meaning to the underlined word: \"The circular *supersedes* all previous correspondence on the matter.\"",
+        "question_text": "Choose the option nearest in meaning to the marked word: \"The circular *supersedes* all previous correspondence on the matter.\"",
         "options": [
             "supports",
             "displaces",

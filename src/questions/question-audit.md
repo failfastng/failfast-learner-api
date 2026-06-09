@@ -266,7 +266,7 @@ All 15 sourced from JAMB UTME via the ALOC API (`questions.aloc.com.ng`), curate
 
 ### q_engl_009 — idiom_interpretation (easy)
 
-**Question:** Choose the option nearest in meaning to the underlined idiom: "Audu was *taken bad* in the middle of the night."
+**Question:** Choose the option nearest in meaning to the marked idiom: "Audu was *taken bad* in the middle of the night."
 
 **Options:**
 - [DISTRACTOR] **He was caught** — Student interpreted "taken" literally as "captured/caught."
@@ -278,7 +278,7 @@ All 15 sourced from JAMB UTME via the ALOC API (`questions.aloc.com.ng`), curate
 
 ### q_engl_010 — vocabulary_synonym (easy)
 
-**Question:** Choose the word nearest in meaning to the underlined word: "I went through his work; it was *gibberish*."
+**Question:** Choose the word nearest in meaning to the marked word: "I went through his work; it was *gibberish*."
 
 **Options:**
 - [CORRECT] **meaningless** — Gibberish means unintelligible or meaningless speech/text.
@@ -302,7 +302,7 @@ All 15 sourced from JAMB UTME via the ALOC API (`questions.aloc.com.ng`), curate
 
 ### q_engl_012 — vocabulary_synonym (hard)
 
-**Question:** Choose the option nearest in meaning to the underlined word: "The circular *supersedes* all previous correspondence on the matter."
+**Question:** Choose the option nearest in meaning to the marked word: "The circular *supersedes* all previous correspondence on the matter."
 
 **Options:**
 - [DISTRACTOR] **supports** — Sound-alike confusion: "super" prefix associated with "supports/upholds" rather than "replaces."
