@@ -260,7 +260,7 @@
         "subject": "english",
         "topic": "vocabulary_synonym",
         "difficulty": "medium",
-        "question_text": "Choose the option nearest in meaning to the word in italics: \"He is a *stringer* for a newspaper.\"",
+        "question_text": "Choose the option nearest in meaning to the marked word: \"He is a *stringer* for a newspaper.\"",
         "options": [
             "a financier of",
             "an editor of",
@@ -324,7 +324,7 @@
         "subject": "english",
         "topic": "vocabulary_synonym",
         "difficulty": "hard",
-        "question_text": "Choose the option nearest in meaning to the word in italics: \"We were warned not to indulge in *recriminations*.\"",
+        "question_text": "Choose the option nearest in meaning to the marked word: \"We were warned not to indulge in *recriminations*.\"",
         "options": [
             "counter-charges",
             "indiscretions",
@@ -340,7 +340,7 @@
         "subject": "english",
         "topic": "vocabulary_antonym",
         "difficulty": "medium",
-        "question_text": "Choose the option opposite in meaning to the word in italics: \"A *tentative* solution was provided.\"",
+        "question_text": "Choose the option opposite in meaning to the marked word: \"A *tentative* solution was provided.\"",
         "options": [
             "convincing",
             "provisional",

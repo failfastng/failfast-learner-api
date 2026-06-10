@@ -182,7 +182,7 @@ All 15 sourced from JAMB UTME via the ALOC API (`questions.aloc.com.ng`), curate
 
 ### q_engl_002 — vocabulary_synonym (medium)
 
-**Question:** Choose the option nearest in meaning to the word in italics: "He is a *stringer* for a newspaper."
+**Question:** Choose the option nearest in meaning to the marked word: "He is a *stringer* for a newspaper."
 
 **Options:**
 - [DISTRACTOR] **a financier of** — Sound-alike confusion: "stringer" misheard or misread as related to financial backing. Surface-similarity error.
@@ -230,7 +230,7 @@ All 15 sourced from JAMB UTME via the ALOC API (`questions.aloc.com.ng`), curate
 
 ### q_engl_006 — vocabulary_synonym (hard)
 
-**Question:** Choose the option nearest in meaning to the word in italics: "We were warned not to indulge in *recriminations*."
+**Question:** Choose the option nearest in meaning to the marked word: "We were warned not to indulge in *recriminations*."
 
 **Options:**
 - [CORRECT] **counter-charges** — Recriminations are mutual accusations or counter-accusations.
@@ -242,7 +242,7 @@ All 15 sourced from JAMB UTME via the ALOC API (`questions.aloc.com.ng`), curate
 
 ### q_engl_007 — vocabulary_antonym (medium)
 
-**Question:** Choose the option opposite in meaning to the word in italics: "A *tentative* solution was provided."
+**Question:** Choose the option opposite in meaning to the marked word: "A *tentative* solution was provided."
 
 **Options:**
 - [DISTRACTOR] **convincing** — Student confused antonym with synonym OR thought "tentative" meant "unconvincing." Direction error.
