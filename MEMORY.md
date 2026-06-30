@@ -11,9 +11,8 @@
 
 ## OAuth Protected Resource Metadata
 
-- Serve RFC 9728 PRM at `GET /.well-known/oauth-protected-resource` from `AppController`. Same JSON as `failfastng.com` static file; `resource` is `https://learner-api.failfastng.com/`, `authorization_servers` is `["https://failfastng.com"]`.
-
-- Serve RFC 9728 PRM at `GET /.well-known/oauth-protected-resource` from `AppController`. Same JSON as `failfastedu.com` static file; `resource` is `https://learner-api.failfastedu.com/`, `authorization_servers` is `["https://failfastedu.com"]`.
+- **API host (canonical):** `GET /.well-known/oauth-protected-resource` from `AppController`, host-aware via `req.headers.host`. `resource` must match the API origin (`https://learner-api.failfastng.com/` or `https://learner-api.failfastedu.com/`). `authorization_servers` points at the matching marketing site.
+- **Marketing sites** publish separate static PRM where `resource` matches the marketing origin (`https://failfastng.com/` or `https://failfastedu.com/`) so agent-readiness scanners pass origin validation. Agents integrating with the API should read PRM from the **API host**; `auth.md` on each marketing site documents both URLs.
 
 ## Always build before pushing (non-negotiable)
 
