@@ -9,6 +9,12 @@
 - **Prisma creates PascalCase quoted table names** in Postgres. Raw SQL must use `"Session"`, `"WaitlistSignup"`, `"ShareEvent"` etc. — lowercase `sessions` will 404.
 - **After any schema change**: run `npx prisma generate` locally before building so TypeScript picks up new model accessors.
 
+## OAuth Protected Resource Metadata
+
+- Serve RFC 9728 PRM at `GET /.well-known/oauth-protected-resource` from `AppController`. Same JSON as `failfastng.com` static file; `resource` is `https://learner-api.failfastng.com/`, `authorization_servers` is `["https://failfastng.com"]`.
+
+- Serve RFC 9728 PRM at `GET /.well-known/oauth-protected-resource` from `AppController`. Same JSON as `failfastedu.com` static file; `resource` is `https://learner-api.failfastedu.com/`, `authorization_servers` is `["https://failfastedu.com"]`.
+
 ## Always build before pushing (non-negotiable)
 
 Run `npm run build` in the API repo before every commit. The user was explicit and frustrated when a broken build was pushed. Lint passing is not sufficient — NestJS type errors only surface at build time.
